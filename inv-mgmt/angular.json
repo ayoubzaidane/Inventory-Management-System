@@ -37,9 +37,19 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",             
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
+              "node_modules/boxicons/css/boxicons.min.css",
+              "node_modules/quill/dist/quill.snow.css",  
+              "node_modules/remixicon/fonts/remixicon.css",
+              "node_modules/simple-datatables/dist/style.css"
+
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -102,5 +112,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "73305c27-758f-4d8c-9193-31a713a0236c"
   }
 }
