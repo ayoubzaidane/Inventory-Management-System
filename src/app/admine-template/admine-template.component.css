@@ -1,0 +1,101 @@
+  /* Style pour la barre de navigation */
+.navbar {
+  background-color: #003DA5; /* Bleu Danone */
+  width: 100%; /* Assure que la navbar prend toute la largeur */
+  position: fixed; /* Fixe la navbar en haut de la page */
+  top: 0;
+  z-index: 1000; /* Assure que la navbar reste au-dessus du contenu */
+}
+
+.navbar-brand {
+  color: #FFFFFF; /* Couleur blanche pour le nom de l'application */
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.navbar-brand i{
+  cursor: pointer;
+}
+
+.navbar-nav .nav-link {
+  color: #FFFFFF;
+  margin-left: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #4A90E2; /* Bleu clair pour l'effet hover */
+}
+
+.navbar-nav .logout-btn {
+  background-color: #ED1C24; /* Rouge pour le bouton Logout */
+  color: #FFFFFF;
+  padding: 8px 16px;
+  border-radius: 5px;
+  margin-left: 15px;
+  border: none;
+}
+
+.navbar-nav .logout-btn:hover {
+  background-color: #c81b1b; /* Rouge plus foncé au hover */
+}
+
+.navbar-nav .dropdown-menu {
+  background-color: #ffffff;
+  border: none;
+}
+
+.navbar-nav .dropdown-item {
+  color: #6c757d;
+}
+
+.navbar-nav .dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: #495057;
+}
+
+.dropdown-menu a {
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Style pour le sidebar */
+#sidebar-wrapper {
+  height: 100vh;
+  background-color: #ffffff;
+  padding-top: 20px;
+  position: fixed;
+  top: 56px;
+  left: 0;
+  width: 250px;
+  border-right: 2px solid #E0E0E0; /* Ajoute une bordure droite */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère */
+  transform: translateX(-100%); /* Sidebar caché par défaut */
+  transition: transform 0.3s ease-in-out; /* Animation pour l'affichage */
+}
+#sidebar-wrapper.show {
+  transform: translateX(0); /* Sidebar visible */
+}
+
+
+#sidebar-wrapper .list-group-item {
+  background-color: #FFFFFF; /* Fond blanc pour chaque item */
+  color: #343a40; /* Texte en noir */
+  border: none;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#sidebar-wrapper .list-group-item i {
+  margin-right: 10px; /* Espacement entre l'icône et le texte */
+}
+
+#sidebar-wrapper .list-group-item:hover {
+  background-color: #f8f9fa; /* Fond légèrement gris clair au survol */
+  cursor: pointer;
+}

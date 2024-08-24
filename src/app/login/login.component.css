@@ -1,0 +1,45 @@
+.container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  background-color: white;
+  border-radius: 15px;
+}
+
+.btn-primary {
+  background-color: #003DA5;
+  border: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #002f88;
+}
+
+.form-group label {
+  font-size: 1rem;
+  color: #003DA5;
+}
+
+.form-control {
+  border: 1px solid #003DA5;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1.1rem;
+}
+
+.form-control:focus {
+  border-color: #002f88;
+  box-shadow: none;
+}
+
+.app-name {
+  color: #003DA5;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+}

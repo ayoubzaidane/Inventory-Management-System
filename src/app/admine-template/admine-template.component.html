@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg">
+    <span class="navbar-brand ms-3 text-white fw-bold">
+        <i class="bi bi-list me-2" id="menu-toggle" (click)="toggleSidebar()"></i> Danone Inventory
+    </span>
+  <div class="collapse navbar-collapse justify-content-end">
+    <ul class="navbar-nav me-5">
+      <li class="nav-item">
+        <a class="nav-link mx-4 fw-bold" routerLink="/home">Home</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle mx-4 fw-bold" href="#" id="importDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Import
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="importDropdown">
+          <li><a class="dropdown-item" routerLink="/deliverynote">Delivery Note</a></li>
+          <li><a class="dropdown-item" routerLink="/purshaseorder">Purchase Order</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link mx-4 fw-bold" routerLink="/products">Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link mx-4 fw-bold" routerLink="/accessory">Accessory</a>
+      </li>
+      <li class="nav-item mx-4">
+        <button class="logout-btn fw-bold">Logout</button>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div id="sidebar-wrapper" class="hidden">
+  <div class="list-group list-group-flush">
+    <a routerLink="/dashboard" class="list-group-item"><i class="bi bi-grid-fill"></i> Dashboard</a>
+    <a routerLink="/totalproducts" class="list-group-item"><i class="bi bi-box-seam"></i> Total Products</a>
+    <a routerLink="/totalaccessories" class="list-group-item"><i class="bi bi-bag"></i> Total Accessories</a>
+    <a routerLink="/productsbyregion" class="list-group-item"><i class="bi bi-geo-alt"></i> Products By region</a>
+    <a routerLink="/accessorybyregion" class="list-group-item"><i class="bi bi-geo-alt"></i> Accessories By region</a>
+    <a routerLink="/productsbysite" class="list-group-item"><i class="bi bi-building"></i> Products By Site</a>
+    <a routerLink="/accessorybysite" class="list-group-item"><i class="bi bi-box-seam"></i> Accessories By Site</a>
+    <a routerLink="/productsbydepartement" class="list-group-item"><i class="bi bi-diagram-2"></i> Products department</a>
+    <a routerLink="/accessorybydepartement" class="list-group-item"><i class="bi bi-diagram-3"></i>Accessories department</a>
+  </div>
+</div>
+<div id="page-content-wrapper" class="w-100">
+  <router-outlet></router-outlet>
+</div>
